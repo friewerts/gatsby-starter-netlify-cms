@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '../../components/Layout'
+import PageWrapper from '../../components/PageWrapper/PageWrapper'
 import { HTMLContent } from '../../components/Content'
 
 import UnsereWohnungenTemplate from './UnsereWohnungenTemplate'
@@ -10,13 +10,13 @@ const UnsereWohnungen = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <PageWrapper>
       <UnsereWohnungenTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
       />
-    </Layout>
+    </PageWrapper>
   )
 }
 

@@ -29,6 +29,13 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/unsere-wohnungen/index.md"
+        label: "Unsere Wohnungen"
+        name: "unsere-wohnungen"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "unsere-wohnungen"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

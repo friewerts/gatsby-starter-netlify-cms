@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import { HTMLContent } from '../../components/Content'
 
 import UnsereWohnungenTemplate from './UnsereWohnungenTemplate'
 
@@ -11,6 +12,7 @@ const UnsereWohnungen = ({ data }) => {
   return (
     <Layout>
       <UnsereWohnungenTemplate
+        contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
       />

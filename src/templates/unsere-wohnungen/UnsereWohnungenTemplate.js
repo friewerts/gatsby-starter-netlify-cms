@@ -4,15 +4,18 @@ import Content from '../../components/Content'
 
 const UnsereWohnungenTemplate = ({ 
     title, 
-    content
+    content,
+    contentComponent
 }) => {
+
+  const PageContent = contentComponent || Content
 
   return (
     <section className="fr-unsere-wohnungen">
       <h2 className="fr-unsere-wohnungen__headline">
         {title}
       </h2>
-      <Content className="fr-unsere-wohnungen__content" content={content} />
+      <PageContent className="fr-unsere-wohnungen__content" content={content} />
     </section>
   )
 }
@@ -20,6 +23,7 @@ const UnsereWohnungenTemplate = ({
 UnsereWohnungenTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
+  contentComponent: PropTypes.func,
 }
 
 export default UnsereWohnungenTemplate;

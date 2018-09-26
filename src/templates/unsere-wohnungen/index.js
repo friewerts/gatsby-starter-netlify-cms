@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import PageWrapper from '../../components/PageWrapper/PageWrapper'
-import { HTMLContent } from '../../components/Content'
+import { PageWrapper, HTMLContent } from '../../components'
 
 import UnsereWohnungenTemplate from './UnsereWohnungenTemplate'
 

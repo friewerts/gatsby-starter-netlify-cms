@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import Layout from '../../components/Layout'
-import { HTMLContent } from '../../components/Content'
+import { PageWrapper, HTMLContent } from '../../components'
 
 import BlogPostTemplate from './BlogPostTemplate'
 
@@ -11,7 +10,7 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <PageWrapper>
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -20,7 +19,7 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
-    </Layout>
+    </PageWrapper>
   )
 }
 

@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '../../components/Layout'
 
+import { PageWrapper } from '../../components'
 import ProductPageTemplate from './ProductPageTemplate'
 
 const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout>
+    <PageWrapper>
       <ProductPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
@@ -21,7 +21,7 @@ const ProductPage = ({ data }) => {
         fullImage={frontmatter.full_image}
         pricing={frontmatter.pricing}
       />
-    </Layout>
+    </PageWrapper>
   )
 }
 

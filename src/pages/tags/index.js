@@ -2,12 +2,13 @@ import React from 'react'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
-import Layout from '../../components/Layout'
+import { PageWrapper } from '../../components'
+
 
 const TagsPage = ({
   data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
 }) => (
-  <Layout>
+  <PageWrapper>
     <section className="section">
       <Helmet title={`Tags | ${title}`} />
       <div className="container content">
@@ -30,7 +31,7 @@ const TagsPage = ({
         </div>
       </div>
     </section>
-  </Layout>
+  </PageWrapper>
 )
 
 export default TagsPage

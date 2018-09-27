@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
 
 @import './_variables.scss';
 
@@ -10,7 +11,7 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: $headlineFontFamily;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2.1rem;
   letter-spacing: 2px;
 }

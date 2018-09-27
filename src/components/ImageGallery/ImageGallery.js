@@ -1,19 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { v4 } from 'uuid'
+
+import ImageGalleryItem from './ImageGalleryItem'
+import './ImageGallery.scss'
 
 const ImageGallery = ({ images }) => (
   <div className="fr-m-image-gallery">
     {images.map(imageData => (
-      <div key={v4()} className="fr-m-image-gallery__image">
-        <div className="fr-m-image-gallery__image-description">
-          {imageData.description}
-        </div>
-        <img
-          src={imageData.image.image}
-          alt={imageData.image.alt}
-        />
-      </div>
+      <ImageGalleryItem imageData={imageData} />
     ))}
   </div>
 )

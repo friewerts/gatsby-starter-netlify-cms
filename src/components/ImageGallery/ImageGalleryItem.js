@@ -6,8 +6,8 @@ const ImageGalleryItem = ({ imageData }) => (
   <div key={v4()} className="fr-m-image-gallery__item">
     <img
       className="fr-m-image-gallery__item-image"
-      src={imageData.image.image}
-      alt={imageData.image.alt}
+      src={imageData.image}
+      alt={imageData.alt}
     />
   </div>
 )

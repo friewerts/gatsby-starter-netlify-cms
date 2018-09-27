@@ -4,11 +4,15 @@ import { v4 } from 'uuid'
 
 const ImageGallery = ({ images }) => (
   <div className="fr-m-image-gallery">
-    {images.map(image => (
+    {images.map(imageData => (
       <div key={v4()} className="fr-m-image-gallery__image">
         <div className="fr-m-image-gallery__image-description">
-          {image.description}
+          {imageData.description}
         </div>
+        <img
+          src={imageData.image.image}
+          alt={imageData.image.alt}
+        />
       </div>
     ))}
   </div>
@@ -18,7 +22,7 @@ ImageGallery.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
       description: PropTypes.string,
-      test: PropTypes.string,
+      image: PropTypes.object,
     })
   ),
 }

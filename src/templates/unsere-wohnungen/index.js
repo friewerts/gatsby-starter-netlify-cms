@@ -33,7 +33,7 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         images {
-          test
+          image
           description
         }
       }

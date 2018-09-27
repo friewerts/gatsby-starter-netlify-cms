@@ -7,7 +7,7 @@ const ImageGallery = ({ images }) => (
     {images.map(image => (
       <div key={v4()} className="fr-m-image-gallery__image">
         <div className="fr-m-image-gallery__image-description">
-          {image.discription}
+          {image.description}
         </div>
       </div>
     ))}
@@ -18,6 +18,7 @@ ImageGallery.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
       description: PropTypes.string,
+      test: PropTypes.string,
     })
   ),
 }

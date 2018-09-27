@@ -15,7 +15,6 @@ const ImageGallery = ({ images }) => (
 ImageGallery.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
-      description: PropTypes.string,
       image: PropTypes.object,
     })
   ),

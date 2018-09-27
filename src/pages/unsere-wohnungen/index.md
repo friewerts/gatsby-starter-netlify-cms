@@ -2,8 +2,7 @@
 templateKey: unsere-wohnungen
 title: All about unsere Wohnungen
 images: 
-  - description: Bild 1
-    image:
+  - image:
       alt: Coffee beans
       image: /img/products-grid1.jpg
 ---

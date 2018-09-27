@@ -39,9 +39,13 @@ collections:
           - label: "Bilder"
             name: "images"
             widget: "list"
-            fields:
-              - {label: Bild, name: image, widget: image}
-              - {label: Beschreibung, name: description, widget: string}
+            field:
+              - label: Bild
+                name: image
+                widget: object
+                fields: 
+                  - {label: Image, name: image, widget: image}
+                  - {label: Alt, name: alt, widget: string}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

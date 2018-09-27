@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
+
+@import './_variables.scss';
+
+body {
+  font-family: $bodyFontFamily;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $headlineFontFamily;
+  font-weight: 400;
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+}

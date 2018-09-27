@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Content } from '../../components'
+import { Content, Headline } from '../../components'
 
 const UnsereWohnungenTemplate = ({ 
     title, 
@@ -13,9 +13,8 @@ const UnsereWohnungenTemplate = ({
 
   return (
     <section className="fr-unsere-wohnungen">
-      <h2 className="fr-unsere-wohnungen__headline">
-        {title}
-      </h2>
+      <Headline headline={title} />
+      
       <PageContent className="fr-unsere-wohnungen__content" content={content} />
     </section>
   )

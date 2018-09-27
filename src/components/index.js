@@ -5,3 +5,6 @@ export {default as PageWrapper} from './PageWrapper/PageWrapper';
 export {default as FeatureGrid} from './FeatureGrid/FeatureGrid';
 export {default as Pricing} from './Pricing/Pricing';
 export {default as Testimonials} from './Testimonials/Testimonials';
+export {default as Headline} from './Headline/Headline';
+export {default as Header} from './Header/Header';
+export {default as Navigation} from './Navigation/Navigation';

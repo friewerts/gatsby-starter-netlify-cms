@@ -1,13 +1,14 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import { Navbar } from '../'
+import { Header } from '../'
+import '../../styles/_typography.scss'
 import './PageWrapper.scss'
 
 const PageWrapper = ({ children }) => (
   <div className="fr-page-wrapper">
     <Helmet title="Home | FeWo Riewerts" />
-    <Navbar />
+    <Header />
     <div>{children}</div>
   </div>
 )

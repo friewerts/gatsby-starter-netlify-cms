@@ -36,6 +36,11 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "unsere-wohnungen"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Bilder"
+            name: "images"
+            widget: "list"
+            fields:
+              - {label: Beschreibung, name: description, widget: string}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

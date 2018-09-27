@@ -14,6 +14,7 @@ const UnsereWohnungen = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        images={post.frontmatter.images}
       />
     </PageWrapper>
   )
@@ -31,6 +32,9 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        images {
+          description
+        }
       }
     }
   }

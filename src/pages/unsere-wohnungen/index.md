@@ -2,6 +2,7 @@
 templateKey: unsere-wohnungen
 title: All about unsere Wohnungen
 images: 
-  - test
+  - description: test
+  - test: test2
 ---
 Hallo wie gehts

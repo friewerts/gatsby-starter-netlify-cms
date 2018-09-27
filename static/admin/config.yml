@@ -40,6 +40,7 @@ collections:
             name: "images"
             widget: "list"
             fields:
+              - {label: Test, name: test, widget: string}
               - {label: Beschreibung, name: description, widget: string}
       - file: "src/pages/products/index.md"
         label: "Products Page"

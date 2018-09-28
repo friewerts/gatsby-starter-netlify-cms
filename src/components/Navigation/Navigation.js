@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import NavigationItem from './NavigationItem'
-import './Navigation.scss'
+import NavigationItem from "./NavigationItem";
+import "./Navigation.scss";
 
 const Navigation = () => (
   <nav className="fr-m-navigation">
@@ -9,6 +9,6 @@ const Navigation = () => (
     <NavigationItem label="Products" to="/products" />
     <NavigationItem label="Wohnungen" to="/unsere-wohnungen" />
   </nav>
-)
+);
 
-export default Navigation
+export default Navigation;

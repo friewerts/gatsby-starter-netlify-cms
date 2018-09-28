@@ -1,16 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-import { Content, Headline, ImageGallery } from '../../components'
+import { Content, Headline, ImageGallery } from "../../components";
 
-const UnsereWohnungenTemplate = ({ 
-    title, 
-    content,
-    contentComponent,
-    images
+const UnsereWohnungenTemplate = ({
+  title,
+  content,
+  contentComponent,
+  images
 }) => {
-
-  const PageContent = contentComponent || Content
+  const PageContent = contentComponent || Content;
 
   return (
     <section className="fr-unsere-wohnungen">
@@ -18,14 +17,14 @@ const UnsereWohnungenTemplate = ({
       <PageContent className="fr-unsere-wohnungen__content" content={content} />
       <ImageGallery images={images} />
     </section>
-  )
-}
+  );
+};
 
 UnsereWohnungenTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-  images: PropTypes.array,
-}
+  images: PropTypes.array
+};
 
 export default UnsereWohnungenTemplate;

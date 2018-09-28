@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import { PageWrapper, HTMLContent } from '../../components'
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import { PageWrapper, HTMLContent } from "../../components";
 
-import BlogPostTemplate from './BlogPostTemplate'
+import BlogPostTemplate from "./BlogPostTemplate";
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <PageWrapper>
@@ -20,16 +20,16 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
       />
     </PageWrapper>
-  )
-}
+  );
+};
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
+    markdownRemark: PropTypes.object
+  })
+};
 
-export default BlogPost
+export default BlogPost;
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
@@ -44,4 +44,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

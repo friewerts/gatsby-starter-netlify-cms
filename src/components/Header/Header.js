@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react";
+import { Link } from "gatsby";
 
-import { Navigation } from '../../components'
-import './Header.scss'
-import logo from '../../assets/img/logo.svg'
+import { Navigation } from "../../components";
+import "./Header.scss";
+import logo from "../../assets/img/logo.svg";
 
 const Header = () => (
   <div className="fr-m-header">
@@ -12,6 +12,6 @@ const Header = () => (
     </Link>
     <Navigation />
   </div>
-)
+);
 
-export default Header
+export default Header;

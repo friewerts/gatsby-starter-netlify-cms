@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
 
-import { PageWrapper } from '../../components'
-import ProductPageTemplate from './ProductPageTemplate'
+import { PageWrapper } from "../../components";
+import ProductPageTemplate from "./ProductPageTemplate";
 
 const ProductPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <PageWrapper>
@@ -22,18 +22,18 @@ const ProductPage = ({ data }) => {
         pricing={frontmatter.pricing}
       />
     </PageWrapper>
-  )
-}
+  );
+};
 
 ProductPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
+      frontmatter: PropTypes.object
+    })
+  })
+};
 
-export default ProductPage
+export default ProductPage;
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
@@ -85,4 +85,4 @@ export const productPageQuery = graphql`
       }
     }
   }
-`
+`;

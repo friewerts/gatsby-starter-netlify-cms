@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { v4 } from 'uuid'
 
 import ImageGalleryItem from './ImageGalleryItem'
 import './ImageGallery.scss'
@@ -7,7 +8,7 @@ import './ImageGallery.scss'
 const ImageGallery = ({ images }) => (
   <div className="fr-m-image-gallery">
     {images.map(imageData => (
-      <ImageGalleryItem imageData={imageData} />
+      <ImageGalleryItem key={v4()} imageData={imageData} />
     ))}
   </div>
 )
@@ -16,6 +17,7 @@ ImageGallery.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.object,
+      alt: PropTypes.string,
     })
   ),
 }

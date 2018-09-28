@@ -34,7 +34,13 @@ export const aboutPageQuery = graphql`
         title
         images {
           alt
-          image
+          image {
+            childImageSharp {
+              fixed(width: 125, height: 125) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
         }
       }
     }

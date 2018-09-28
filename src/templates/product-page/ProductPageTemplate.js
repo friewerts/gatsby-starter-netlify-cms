@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { FeatureGrid, Pricing, Testimonials } from '../../components'
 
 const ProductPageTemplate = ({
-  image,
+  image_old,
   title,
   heading,
   description,
@@ -21,7 +21,7 @@ const ProductPageTemplate = ({
             <div className="content">
               <div
                 className="full-width-image-container margin-top-0"
-                style={{ backgroundImage: `url(${image})` }}
+                style={{ backgroundImage: `url(${image_old})` }}
               >
                 <h2
                   className="has-text-weight-bold is-size-1"

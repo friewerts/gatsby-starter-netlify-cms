@@ -11,7 +11,7 @@ const ProductPage = ({ data }) => {
   return (
     <PageWrapper>
       <ProductPageTemplate
-        image={frontmatter.image}
+        image={frontmatter.image_old}
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
@@ -40,7 +40,7 @@ export const productPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        image
+        image_old
         heading
         description
         intro {

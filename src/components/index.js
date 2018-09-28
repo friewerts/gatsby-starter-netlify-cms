@@ -9,3 +9,4 @@ export { default as Headline } from "./Headline/Headline";
 export { default as Header } from "./Header/Header";
 export { default as Navigation } from "./Navigation/Navigation";
 export { default as ImageGallery } from "./ImageGallery/ImageGallery";
+export { default as Image } from "./Image/Image";

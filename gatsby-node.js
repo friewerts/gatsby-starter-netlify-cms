@@ -77,14 +77,25 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { frontmatter } = node
 
   if (frontmatter) {
-    const {image} = frontmatter
+    const {image, images} = frontmatter
     if (image) {
       if (image.indexOf('/img') === 0) {
-        frontmatter.image = path.relative(
+        frontmatter.responsiveImage = path.relative(
           path.dirname(node.fileAbsolutePath),
           path.join(__dirname, '/static/', image)
         )
       }
+    }
+
+    if (images) {
+      images.forEach((imageData, ind) => {
+        if (imageData.image.indexOf('/img') === 0) {
+          frontmatter.images[ind].responsiveImage = path.relative(
+            path.dirname(node.fileAbsolutePath),
+            path.join(__dirname, '/static/', imageData.image)
+          )
+        }
+      });
     }
   }
 

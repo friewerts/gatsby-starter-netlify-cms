@@ -34,7 +34,7 @@ export const aboutPageQuery = graphql`
         title
         images {
           alt
-          image {
+          responsiveImage {
             childImageSharp {
               fixed(width: 125, height: 125) {
                 ...GatsbyImageSharpFixed

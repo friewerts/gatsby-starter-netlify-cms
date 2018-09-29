@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 
 import { Header } from "../";
 import "../../styles/_typography.scss";
+import "../../styles/_base.scss";
 import "./PageWrapper.scss";
 
 const PageWrapper = ({ children }) => (
